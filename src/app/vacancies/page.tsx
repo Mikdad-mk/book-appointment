@@ -29,7 +29,7 @@ const sampleJobs: Job[] = [
     category: "Finance & Control",
     salary: "€70,000 - €85,000",
     description: "Lead financial reporting and control processes for a major municipality. Oversee budget planning, financial analysis, and compliance reporting.",
-    requirements: ["Master's degree in Finance/Accounting", "5+ years controller experience", "Public sector experience preferred", "Strong analytical skills"],
+    requirements: ["Master&apos;s degree in Finance/Accounting", "5+ years controller experience", "Public sector experience preferred", "Strong analytical skills"],
     posted: "2 days ago"
   },
   {
@@ -41,7 +41,7 @@ const sampleJobs: Job[] = [
     category: "ESG & Sustainability",
     salary: "€55,000 - €70,000",
     description: "Develop and implement CSRD reporting processes. Work with cross-functional teams to collect and analyze sustainability data.",
-    requirements: ["Bachelor's degree in Environmental Science or related", "CSRD reporting experience", "Data analysis skills", "Excellent communication"],
+    requirements: ["Bachelor&apos;s degree in Environmental Science or related", "CSRD reporting experience", "Data analysis skills", "Excellent communication"],
     posted: "1 week ago"
   },
   {
@@ -243,7 +243,7 @@ export default function Vacancies() {
       <section className="py-12 lg:py-24 bg-lime-500">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-heading text-4xl sm:text-5xl mb-8">Don't See the Right Opportunity?</h2>
+            <h2 className="font-heading text-4xl sm:text-5xl mb-8">Don&apos;t See the Right Opportunity?</h2>
             <p className="text-xl text-teal-900 mb-10">
               Join our talent network and be the first to know about new opportunities that match your expertise and career goals.
             </p>

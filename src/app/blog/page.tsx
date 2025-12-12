@@ -62,7 +62,7 @@ export default function Blog() {
                     Harnessing the Power of the Sun: Exploring the World of Solar Energy
                   </h3>
                   <p className="text-lg text-gray-700 mb-6">
-                    Solar energy is revolutionizing the way we power our world. In this blog post, we'll delve into the incredible potential of solar technology, its environmental...
+                    Solar energy is revolutionizing the way we power our world. In this blog post, we&apos;ll delve into the incredible potential of solar technology, its environmental...
                   </p>
                   <div className="flex items-center">
                     <Image className="w-10 h-10 rounded-full" src="/fauna-assets/blog/avatar-1.png" alt="" width={40} height={40} />

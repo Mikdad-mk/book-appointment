@@ -80,7 +80,7 @@ export default function ForClients() {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="font-heading text-4xl sm:text-5xl mb-8">Challenges We Solve</h2>
             <p className="text-xl text-gray-700">
-              Organizations face complex staffing challenges in today's competitive market. We provide sustainable solutions.
+              Organizations face complex staffing challenges in today&apos;s competitive market. We provide sustainable solutions.
             </p>
           </div>
           <div className="flex flex-wrap -mx-4">
@@ -94,7 +94,7 @@ export default function ForClients() {
                 </div>
                 <h3 className="text-2xl font-medium mb-4">Shortage of Qualified Professionals</h3>
                 <p className="text-gray-700">
-                  Finding professionals with the right combination of technical skills and personal integrity is increasingly difficult in today's market.
+                  Finding professionals with the right combination of technical skills and personal integrity is increasingly difficult in today&apos;s market.
                 </p>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function ForClients() {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="font-heading text-4xl sm:text-5xl mb-8">Our Solutions</h2>
             <p className="text-xl text-teal-900">
-              Comprehensive staffing solutions tailored to your organization's specific needs and culture.
+              Comprehensive staffing solutions tailored to your organization&apos;s specific needs and culture.
             </p>
           </div>
           <div className="flex flex-wrap -mx-4">

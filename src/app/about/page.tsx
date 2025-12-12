@@ -229,7 +229,7 @@ export default function About() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-heading text-4xl sm:text-5xl text-white mb-8">Ready to Work Together?</h2>
             <p className="text-xl text-white opacity-80 mb-10">
-              Whether you're an organization seeking exceptional professionals or a professional looking for meaningful opportunities, we're here to help.
+              Whether you&apos;re an organization seeking exceptional professionals or a professional looking for meaningful opportunities, we&apos;re here to help.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

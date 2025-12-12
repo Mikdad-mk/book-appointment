@@ -84,7 +84,7 @@ export default function OurApproach() {
                   <h3 className="text-2xl font-medium">Client Intake & Need Assessment</h3>
                 </div>
                 <p className="text-xl text-gray-700 mb-6">
-                  We begin with a comprehensive understanding of your organization's specific needs, culture, and expectations.
+                  We begin with a comprehensive understanding of your organization&apos;s specific needs, culture, and expectations.
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li>• Detailed role requirements analysis</li>
@@ -331,7 +331,7 @@ export default function OurApproach() {
                 </div>
                 <h3 className="text-2xl font-medium mb-4">Continuous Support</h3>
                 <p className="text-gray-700">
-                  Our commitment doesn't end with placement. We provide ongoing coaching and support to ensure continued success for all parties.
+                  Our commitment doesn&apos;t end with placement. We provide ongoing coaching and support to ensure continued success for all parties.
                 </p>
               </div>
             </div>
@@ -404,7 +404,7 @@ export default function OurApproach() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-heading text-4xl sm:text-5xl text-white mb-8">Experience Our Approach</h2>
             <p className="text-xl text-white opacity-80 mb-10">
-              Ready to see how our unique methodology can solve your staffing challenges? Let's discuss your specific needs.
+              Ready to see how our unique methodology can solve your staffing challenges? Let&apos;s discuss your specific needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

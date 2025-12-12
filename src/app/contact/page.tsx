@@ -47,7 +47,7 @@ export default function Contact() {
               Contact Us
             </h1>
             <p className="max-w-2xl mx-auto text-xl text-white opacity-80 mb-10">
-              Ready to find exceptional professionals or advance your career? Let's start the conversation.
+              Ready to find exceptional professionals or advance your career? Let&apos;s start the conversation.
             </p>
           </div>
         </div>
@@ -62,7 +62,7 @@ export default function Contact() {
               <div className="max-w-lg">
                 <h2 className="font-heading text-4xl sm:text-5xl mb-8">Get in Touch</h2>
                 <p className="text-xl text-gray-700 mb-8">
-                  Whether you're an organization seeking professionals or a professional looking for opportunities, we're here to help.
+                  Whether you&apos;re an organization seeking professionals or a professional looking for opportunities, we&apos;re here to help.
                 </p>
                 
                 <div className="space-y-6">
@@ -183,7 +183,7 @@ export default function Contact() {
                       >
                         <option value="">Select inquiry type</option>
                         <option value="client">I need professionals (Client)</option>
-                        <option value="professional">I'm looking for opportunities (Professional)</option>
+                        <option value="professional">I&apos;m looking for opportunities (Professional)</option>
                         <option value="partnership">Partnership inquiry</option>
                         <option value="general">General inquiry</option>
                       </select>

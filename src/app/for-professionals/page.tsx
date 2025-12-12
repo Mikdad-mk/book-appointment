@@ -69,7 +69,7 @@ export default function ForProfessionals() {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="font-heading text-4xl sm:text-5xl mb-8">Why Professionals Choose Ihsan</h2>
             <p className="text-xl text-gray-700">
-              We believe in supporting our professionals' growth while connecting them with meaningful opportunities.
+              We believe in supporting our professionals&apos; growth while connecting them with meaningful opportunities.
             </p>
           </div>
           <div className="flex flex-wrap -mx-4">
@@ -245,7 +245,7 @@ export default function ForProfessionals() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-heading text-4xl sm:text-5xl text-white mb-8">Ready to Take the Next Step?</h2>
             <p className="text-xl text-white opacity-80 mb-10">
-              Join our network of professionals who combine expertise with character. Let's build your career together.
+              Join our network of professionals who combine expertise with character. Let&apos;s build your career together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

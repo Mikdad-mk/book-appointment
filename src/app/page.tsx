@@ -312,21 +312,21 @@ export default function Home() {
                 >
                   <div className="flex-shrink-0 px-4 w-full">
                     <h4 className="text-3xl lg:text-4xl font-medium mb-10">
-                      "Ihsan Talent delivered exactly what we needed - professionals with both expertise and integrity. Their character assessment process is truly unique."
+                      &ldquo;Ihsan Talent delivered exactly what we needed - professionals with both expertise and integrity. Their character assessment process is truly unique.&rdquo;
                     </h4>
                     <span className="block text-xl font-medium">Marcus van der Berg</span>
                     <span className="block mb-12 lg:mb-32 text-lg text-gray-700">HR Director, Municipality Amsterdam</span>
                   </div>
                   <div className="flex-shrink-0 px-4 w-full">
                     <h4 className="text-3xl lg:text-4xl font-medium mb-10">
-                      "Outstanding ESG professionals who understand both compliance and practical implementation. Highly recommended."
+                      &ldquo;Outstanding ESG professionals who understand both compliance and practical implementation. Highly recommended.&rdquo;
                     </h4>
                     <span className="block text-xl font-medium">Michael Chen</span>
                     <span className="block mb-12 lg:mb-32 text-lg text-gray-700">CFO, Sustainable Corp</span>
                   </div>
                   <div className="flex-shrink-0 px-4 w-full">
                     <h4 className="text-3xl lg:text-4xl font-medium mb-10">
-                      "The quality of WMO professionals from Ihsan is exceptional. They truly care about the communities they serve."
+                      &ldquo;The quality of WMO professionals from Ihsan is exceptional. They truly care about the communities they serve.&rdquo;
                     </h4>
                     <span className="block text-xl font-medium">Lisa Janssen</span>
                     <span className="block mb-12 lg:mb-32 text-lg text-gray-700">Director, Care Foundation Utrecht</span>
