@@ -287,7 +287,7 @@ export default function Home() {
                       </svg>
                     </div>
                     <blockquote className="text-lg sm:text-xl lg:text-2xl font-medium mb-6 sm:mb-8 leading-relaxed text-gray-900">
-                      "Ihsan Talent delivered exactly what we needed - professionals with both expertise and integrity. Their character assessment process is truly unique."
+                      &ldquo;Ihsan Talent delivered exactly what we needed - professionals with both expertise and integrity. Their character assessment process is truly unique.&rdquo;
                     </blockquote>
                     <div className="flex items-center">
                       <div>
