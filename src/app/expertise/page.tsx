@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import { AnimatedGridPattern } from '@/components/ui/animated-grid-pattern'
 
 export default function Expertise() {
   return (
@@ -9,69 +10,77 @@ export default function Expertise() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 bg-white overflow-hidden">
-        {/* Sectoral background visualization */}
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-gradient-to-br from-lime-100 to-transparent"></div>
-          <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-bl from-orange-100 to-transparent"></div>
-          <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-tr from-teal-100 to-transparent"></div>
-          <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-to-tl from-lime-200 to-transparent"></div>
-        </div>
+      <section className="relative bg-teal-900 py-16 sm:py-20 lg:py-32 overflow-hidden">
+        {/* Animated Grid Pattern Background */}
+        <AnimatedGridPattern
+          numSquares={30}
+          maxOpacity={0.15}
+          duration={3}
+          repeatDelay={1}
+          className="fill-lime-400/20 stroke-lime-400/20 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)] inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
+        />
         
-        <div className="container mx-auto px-4 relative">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <span className="inline-block px-6 py-3 bg-teal-900 text-white rounded-full text-sm font-medium mb-8">
-              Four Key Sectors
-            </span>
-            <h1 className="font-heading text-4xl sm:text-6xl lg:text-7xl text-teal-900 mb-8 leading-tight">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
+            <div className="mb-6 sm:mb-8">
+              <span className="inline-flex items-center px-3 sm:px-4 py-2 bg-lime-500/20 text-lime-300 rounded-full text-xs sm:text-sm font-medium">
+                <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Four Key Sectors
+              </span>
+            </div>
+            
+            <h1 className="font-heading text-3xl xs:text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white mb-6 sm:mb-8 leading-tight">
               Our 
-              <span className="text-lime-600"> expertise</span> areas
+              <span className="text-lime-400"> expertise</span> areas
             </h1>
-            <p className="max-w-2xl mx-auto text-xl text-gray-700 mb-12 leading-relaxed">
+            
+            <p className="max-w-2xl mx-auto text-lg sm:text-xl text-white/90 mb-8 sm:mb-12 leading-relaxed px-4">
               Specialized professionals across four key sectors where technical expertise and personal character create lasting impact.
             </p>
           </div>
           
           {/* Expertise areas preview grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="group bg-lime-500 rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 cursor-pointer">
-              <div className="w-12 h-12 bg-teal-900 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-6 h-6 text-lime-500" fill="currentColor" viewBox="0 0 20 20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-4">
+            <div className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 sm:p-6 text-center hover:bg-white/20 transition-all duration-300 cursor-pointer">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-lime-500 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-teal-900" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"/>
                 </svg>
               </div>
-              <h3 className="text-lg font-medium text-teal-900 mb-2">Finance & Control</h3>
-              <p className="text-sm text-teal-800">Controllers & Analysts</p>
+              <h3 className="text-base sm:text-lg font-medium text-white mb-2">Finance & Control</h3>
+              <p className="text-xs sm:text-sm text-white/80">Controllers & Analysts</p>
             </div>
             
-            <div className="group bg-orange-400 rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 cursor-pointer">
-              <div className="w-12 h-12 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-6 h-6 text-orange-400" fill="currentColor" viewBox="0 0 20 20">
+            <div className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 sm:p-6 text-center hover:bg-white/20 transition-all duration-300 cursor-pointer">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-400 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd"/>
                 </svg>
               </div>
-              <h3 className="text-lg font-medium text-white mb-2">ESG & Sustainability</h3>
-              <p className="text-sm text-white opacity-90">CSRD Specialists</p>
+              <h3 className="text-base sm:text-lg font-medium text-white mb-2">ESG & Sustainability</h3>
+              <p className="text-xs sm:text-sm text-white/80">CSRD Specialists</p>
             </div>
             
-            <div className="group bg-teal-600 rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 cursor-pointer">
-              <div className="w-12 h-12 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-6 h-6 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+            <div className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 sm:p-6 text-center hover:bg-white/20 transition-all duration-300 cursor-pointer">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-400 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 2L3 7v11a1 1 0 001 1h12a1 1 0 001-1V7l-7-5zM6 9.5A1.5 1.5 0 017.5 8h5A1.5 1.5 0 0114 9.5v5a1.5 1.5 0 01-1.5 1.5h-5A1.5 1.5 0 016 14.5v-5z" clipRule="evenodd"/>
                 </svg>
               </div>
-              <h3 className="text-lg font-medium text-white mb-2">Legal & Governance</h3>
-              <p className="text-sm text-white opacity-90">Compliance Officers</p>
+              <h3 className="text-base sm:text-lg font-medium text-white mb-2">Legal & Governance</h3>
+              <p className="text-xs sm:text-sm text-white/80">Compliance Officers</p>
             </div>
             
-            <div className="group bg-lime-600 rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 cursor-pointer">
-              <div className="w-12 h-12 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-6 h-6 text-lime-600" fill="currentColor" viewBox="0 0 20 20">
+            <div className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 sm:p-6 text-center hover:bg-white/20 transition-all duration-300 cursor-pointer">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-400 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </div>
-              <h3 className="text-lg font-medium text-white mb-2">Social Care (WMO)</h3>
-              <p className="text-sm text-white opacity-90">Case Managers</p>
+              <h3 className="text-base sm:text-lg font-medium text-white mb-2">Social Care (WMO)</h3>
+              <p className="text-xs sm:text-sm text-white/80">Case Managers</p>
             </div>
           </div>
         </div>

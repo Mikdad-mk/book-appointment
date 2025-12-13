@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import { AnimatedGridPattern } from '@/components/ui/animated-grid-pattern'
 
 interface Job {
   id: number
@@ -118,48 +119,77 @@ export default function Vacancies() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 bg-gradient-to-br from-orange-400 via-orange-300 to-lime-400 overflow-hidden">
-
+      <section className="relative bg-teal-900 py-16 sm:py-20 lg:py-32 overflow-hidden">
+        {/* Animated Grid Pattern Background */}
+        <AnimatedGridPattern
+          numSquares={30}
+          maxOpacity={0.15}
+          duration={3}
+          repeatDelay={1}
+          className="fill-lime-400/20 stroke-lime-400/20 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)] inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
+        />
         
-        <div className="container mx-auto px-4 relative">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <span className="inline-block px-6 py-3 bg-teal-900 text-white rounded-full text-sm font-medium mb-8">
-              Live Job Board
-            </span>
-            <h1 className="font-heading text-4xl sm:text-6xl lg:text-7xl text-teal-900 mb-8 leading-tight">
+            <div className="mb-6 sm:mb-8">
+              <span className="inline-flex items-center px-3 sm:px-4 py-2 bg-lime-500/20 text-lime-300 rounded-full text-xs sm:text-sm font-medium">
+                <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
+                  <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                </svg>
+                Live Job Board
+              </span>
+            </div>
+            
+            <h1 className="font-heading text-3xl xs:text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white mb-6 sm:mb-8 leading-tight">
               Current 
-              <span className="text-white"> opportunities</span>
+              <span className="text-lime-400"> opportunities</span>
             </h1>
-            <p className="max-w-2xl mx-auto text-xl text-teal-800 mb-12 leading-relaxed">
+            
+            <p className="max-w-2xl mx-auto text-lg sm:text-xl text-white/90 mb-8 sm:mb-12 leading-relaxed px-4">
               Discover meaningful career opportunities with organizations that value both expertise and character. Find your next role today.
             </p>
             
             {/* Quick stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-              <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-4 text-center">
-                <div className="text-2xl font-bold text-teal-900 mb-1">25+</div>
-                <div className="text-sm text-teal-800">Open Positions</div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 mb-8 sm:mb-12 px-4">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 sm:p-4 text-center border border-white/20">
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-lime-400 mb-1">25+</div>
+                <div className="text-xs sm:text-sm text-white/80">Open Positions</div>
               </div>
-              <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-4 text-center">
-                <div className="text-2xl font-bold text-teal-900 mb-1">4</div>
-                <div className="text-sm text-teal-800">Expertise Areas</div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 sm:p-4 text-center border border-white/20">
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-lime-400 mb-1">4</div>
+                <div className="text-xs sm:text-sm text-white/80">Expertise Areas</div>
               </div>
-              <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-4 text-center">
-                <div className="text-2xl font-bold text-teal-900 mb-1">€65k</div>
-                <div className="text-sm text-teal-800">Avg. Salary</div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 sm:p-4 text-center border border-white/20">
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-lime-400 mb-1">€65k</div>
+                <div className="text-xs sm:text-sm text-white/80">Avg. Salary</div>
               </div>
-              <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-4 text-center">
-                <div className="text-2xl font-bold text-teal-900 mb-1">95%</div>
-                <div className="text-sm text-teal-800">Match Rate</div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 sm:p-4 text-center border border-white/20">
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-lime-400 mb-1">95%</div>
+                <div className="text-xs sm:text-sm text-white/80">Match Rate</div>
               </div>
             </div>
             
-            <Link
-              className="inline-flex py-4 px-8 items-center justify-center text-lg font-medium text-orange-400 bg-teal-900 hover:bg-teal-800 rounded-full transition duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
-              href="#jobs"
-            >
-              Browse Opportunities
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+              <Link
+                className="group inline-flex py-3 sm:py-4 px-6 sm:px-8 items-center justify-center text-base sm:text-lg font-semibold text-teal-900 bg-lime-500 hover:bg-lime-400 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+                href="#jobs"
+              >
+                <span className="mr-2">Browse Opportunities</span>
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </Link>
+              <Link
+                className="group inline-flex py-3 sm:py-4 px-6 sm:px-8 items-center justify-center text-base sm:text-lg font-semibold text-white border-2 border-white hover:bg-white hover:text-teal-900 rounded-lg transition-all duration-200"
+                href="/for-professionals"
+              >
+                <span className="mr-2">Join Our Network</span>
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

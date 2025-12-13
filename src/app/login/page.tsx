@@ -28,12 +28,7 @@ export default function Login() {
   return (
     <div>
       {/* Top Banner */}
-      <div>
-        <p className="mb-0 py-3 bg-lime-500 text-center">
-          Want to learn how to build templates like this one? Visit{' '}
-          <a href="#!">www.pixelrocket.store</a>
-        </p>
-      </div>
+     
 
       <div>
         <Navigation />

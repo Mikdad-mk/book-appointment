@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import { AnimatedGridPattern } from '@/components/ui/animated-grid-pattern'
 
 export default function ForClients() {
   return (
@@ -9,65 +10,99 @@ export default function ForClients() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 bg-gradient-to-r from-orange-50 via-white to-lime-50 overflow-hidden">
-        {/* Geometric background elements */}
-        <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-lime-200 to-transparent rounded-full opacity-30 transform translate-x-32 -translate-y-32"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-orange-200 to-transparent rounded-full opacity-40 transform -translate-x-20 translate-y-20"></div>
-        </div>
+      <section className="relative bg-teal-900 py-16 sm:py-20 lg:py-32 overflow-hidden">
+        {/* Animated Grid Pattern Background */}
+        <AnimatedGridPattern
+          numSquares={30}
+          maxOpacity={0.15}
+          duration={3}
+          repeatDelay={1}
+          className="fill-lime-400/20 stroke-lime-400/20 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)] inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
+        />
         
-        <div className="container mx-auto px-4 relative">
-          <div className="flex flex-wrap items-center -mx-4">
-            <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
-              <div className="max-w-lg">
-                <span className="inline-block px-4 py-2 bg-teal-900 text-white rounded-full text-sm font-medium mb-6">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+              <div className="mb-6 sm:mb-8">
+                <span className="inline-flex items-center px-3 sm:px-4 py-2 bg-lime-500/20 text-lime-300 rounded-full text-xs sm:text-sm font-medium">
+                  <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
                   For Organizations
                 </span>
-                <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-teal-900 mb-6 leading-tight">
-                  Find the right 
-                  <span className="text-lime-600"> professionals</span> for your organization
-                </h1>
-                <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                  We solve your staffing challenges with qualified professionals who combine technical expertise with strong personal character.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link
-                    className="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-white bg-teal-900 hover:bg-teal-800 rounded-full transition duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
-                    href="/contact"
-                  >
-                    Submit Assignment
-                  </Link>
-                  <Link
-                    className="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 border-2 border-teal-900 hover:bg-teal-900 hover:text-white rounded-full transition duration-200"
-                    href="/our-approach"
-                  >
-                    Our Approach
-                  </Link>
-                </div>
+              </div>
+              
+              <h1 className="font-heading text-3xl xs:text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white mb-6 sm:mb-8 leading-tight">
+                Find the right 
+                <span className="text-lime-400"> professionals</span> for your organization
+              </h1>
+              
+              <p className="text-lg sm:text-xl text-white/90 mb-8 sm:mb-12 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                We solve your staffing challenges with qualified professionals who combine technical expertise with strong personal character and integrity.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+                <Link
+                  className="group inline-flex py-3 sm:py-4 px-6 sm:px-8 items-center justify-center text-base sm:text-lg font-semibold text-teal-900 bg-lime-500 hover:bg-lime-400 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+                  href="/contact"
+                >
+                  <span className="mr-2">Submit Assignment</span>
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+                <Link
+                  className="group inline-flex py-3 sm:py-4 px-6 sm:px-8 items-center justify-center text-base sm:text-lg font-semibold text-white border-2 border-white hover:bg-white hover:text-teal-900 rounded-lg transition-all duration-200"
+                  href="/our-approach"
+                >
+                  <span className="mr-2">Our Approach</span>
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
               </div>
             </div>
-            <div className="w-full lg:w-1/2 px-4">
-              <div className="relative">
-                <div className="bg-white rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300">
+            
+            <div className="w-full lg:w-1/2">
+              <div className="relative max-w-lg mx-auto">
+                {/* Professional expertise showcase */}
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/20">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-white mb-6">Our Expertise Areas</h3>
                   <div className="space-y-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-lime-500 rounded-full"></div>
-                      <span className="text-gray-700">Finance & Control</span>
+                    <div className="flex items-center space-x-4 p-3 bg-white/10 rounded-lg backdrop-blur-sm">
+                      <div className="w-3 h-3 bg-lime-400 rounded-full flex-shrink-0"></div>
+                      <span className="text-white font-medium">Finance & Control Professionals</span>
                     </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-orange-400 rounded-full"></div>
-                      <span className="text-gray-700">ESG & Sustainability</span>
+                    <div className="flex items-center space-x-4 p-3 bg-white/10 rounded-lg backdrop-blur-sm">
+                      <div className="w-3 h-3 bg-orange-400 rounded-full flex-shrink-0"></div>
+                      <span className="text-white font-medium">ESG & Sustainability Experts</span>
                     </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
-                      <span className="text-gray-700">Legal & Governance</span>
+                    <div className="flex items-center space-x-4 p-3 bg-white/10 rounded-lg backdrop-blur-sm">
+                      <div className="w-3 h-3 bg-blue-400 rounded-full flex-shrink-0"></div>
+                      <span className="text-white font-medium">Legal & Governance Specialists</span>
                     </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-3 h-3 bg-lime-600 rounded-full"></div>
-                      <span className="text-gray-700">Social Care (WMO)</span>
+                    <div className="flex items-center space-x-4 p-3 bg-white/10 rounded-lg backdrop-blur-sm">
+                      <div className="w-3 h-3 bg-green-400 rounded-full flex-shrink-0"></div>
+                      <span className="text-white font-medium">Social Care (WMO) Professionals</span>
+                    </div>
+                  </div>
+                  
+                  {/* Stats */}
+                  <div className="grid grid-cols-2 gap-4 mt-6 pt-6 border-t border-white/20">
+                    <div className="text-center">
+                      <div className="text-2xl sm:text-3xl font-bold text-lime-400">500+</div>
+                      <div className="text-sm text-white/80">Professionals</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl sm:text-3xl font-bold text-lime-400">95%</div>
+                      <div className="text-sm text-white/80">Success Rate</div>
                     </div>
                   </div>
                 </div>
+                
+                {/* Floating elements */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-lime-400/20 rounded-full blur-xl"></div>
+                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-orange-400/20 rounded-full blur-xl"></div>
               </div>
             </div>
           </div>
