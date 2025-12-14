@@ -218,26 +218,24 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="flex justify-center overflow-x-auto pb-4">
-            <div className="flex gap-2 sm:gap-4 lg:gap-8 min-w-max">
-              <div className="flex-shrink-0 w-32 xs:w-40 sm:w-48 md:w-64 lg:w-80">
-                <Image className="block w-full rounded-lg" src="/fauna-assets/about/about-image3.png" alt="" width={400} height={300} />
-              </div>
-              <div className="flex-shrink-0 w-32 xs:w-40 sm:w-48 md:w-64 lg:w-80">
-                <Image className="block w-full rounded-lg" src="/fauna-assets/about/about-image3.png" alt="" width={400} height={300} />
-              </div>
-              <div className="flex-shrink-0 w-32 xs:w-40 sm:w-48 md:w-64 lg:w-80">
-                <Image className="block w-full rounded-lg" src="/fauna-assets/about/about-image3.png" alt="" width={400} height={300} />
-              </div>
-              <div className="flex-shrink-0 w-32 xs:w-40 sm:w-48 md:w-64 lg:w-80">
-                <Image className="block w-full rounded-lg" src="/fauna-assets/about/about-image3.png" alt="" width={400} height={300} />
-              </div>
-              <div className="hidden sm:block flex-shrink-0 w-32 xs:w-40 sm:w-48 md:w-64 lg:w-80">
-                <Image className="block w-full rounded-lg" src="/fauna-assets/about/about-image3.png" alt="" width={400} height={300} />
-              </div>
-              <div className="hidden md:block flex-shrink-0 w-32 xs:w-40 sm:w-48 md:w-64 lg:w-80">
-                <Image className="block w-full rounded-lg" src="/fauna-assets/about/about-image3.png" alt="" width={400} height={300} />
-              </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 sm:gap-4 lg:gap-6 max-w-6xl mx-auto">
+            <div className="w-full">
+              <Image className="block w-full rounded-lg" src="/fauna-assets/about/about-image3.png" alt="" width={400} height={300} />
+            </div>
+            <div className="w-full">
+              <Image className="block w-full rounded-lg" src="/fauna-assets/about/about-image3.png" alt="" width={400} height={300} />
+            </div>
+            <div className="w-full">
+              <Image className="block w-full rounded-lg" src="/fauna-assets/about/about-image3.png" alt="" width={400} height={300} />
+            </div>
+            <div className="w-full">
+              <Image className="block w-full rounded-lg" src="/fauna-assets/about/about-image3.png" alt="" width={400} height={300} />
+            </div>
+            <div className="hidden sm:block w-full">
+              <Image className="block w-full rounded-lg" src="/fauna-assets/about/about-image3.png" alt="" width={400} height={300} />
+            </div>
+            <div className="hidden lg:block w-full">
+              <Image className="block w-full rounded-lg" src="/fauna-assets/about/about-image3.png" alt="" width={400} height={300} />
             </div>
           </div>
         </div>
@@ -262,7 +260,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
               {/* Image */}
-              <div className="w-full lg:w-1/2 order-2 lg:order-1">
+              <div className="w-full lg:w-1/2 order-1 lg:order-1">
                 <div className="relative max-w-lg mx-auto lg:mx-0">
                   <div className="overflow-hidden rounded-2xl">
                     <Image
@@ -278,7 +276,7 @@ export default function Home() {
               </div>
 
               {/* Content */}
-              <div className="w-full lg:w-1/2 order-1 lg:order-2">
+              <div className="w-full lg:w-1/2 order-2 lg:order-2">
                 <div className="relative">
                   <div className="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200">
                     <div className="mb-6">

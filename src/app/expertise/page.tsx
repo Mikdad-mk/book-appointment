@@ -125,7 +125,7 @@ export default function Expertise() {
             <div className="w-full lg:w-1/2 px-4">
               <Image
                 className="block w-full rounded-2xl"
-                src="/fauna-assets/about/about-image2.png"
+                src="/fauna-assets/about/about-image3.png"
                 alt="Finance & Control Professionals"
                 width={500}
                 height={400}
@@ -223,7 +223,7 @@ export default function Expertise() {
             <div className="w-full lg:w-1/2 px-4">
               <Image
                 className="block w-full rounded-2xl"
-                src="/fauna-assets/about/about-image4.png"
+                src="/fauna-assets/about/about-image3.png"
                 alt="Legal & Governance Professionals"
                 width={500}
                 height={400}
@@ -240,7 +240,7 @@ export default function Expertise() {
             <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0 order-2 lg:order-1">
               <Image
                 className="block w-full rounded-2xl"
-                src="/fauna-assets/about/about-image2.png"
+                src="/fauna-assets/about/about-image3.png"
                 alt="Social Care WMO Professionals"
                 width={500}
                 height={400}
