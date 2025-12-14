@@ -7,24 +7,24 @@ export default function OurApproach() {
   return (
     <div>
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 bg-gradient-to-r from-teal-900 via-teal-800 to-teal-900 overflow-hidden">
 
-        
+
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center">
             <span className="inline-block px-6 py-3 bg-lime-500 text-teal-900 rounded-full text-sm font-medium mb-8">
               Six-Step Methodology
             </span>
             <h1 className="font-heading text-4xl sm:text-6xl lg:text-7xl text-white mb-8 leading-tight">
-              Our proven 
+              Our proven
               <span className="text-lime-400"> approach</span>
             </h1>
             <p className="max-w-2xl mx-auto text-xl text-white opacity-90 mb-12 leading-relaxed">
               A comprehensive methodology that ensures sustainable staffing through the perfect combination of expertise and character assessment.
             </p>
-            
+
             {/* Process steps preview */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
               <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 text-center">
@@ -52,7 +52,7 @@ export default function OurApproach() {
                 <div className="text-sm text-white">Coaching</div>
               </div>
             </div>
-            
+
             <Link
               className="inline-flex py-4 px-8 items-center justify-center text-lg font-medium text-teal-900 bg-lime-500 hover:bg-lime-400 rounded-full transition duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
               href="/contact"
@@ -72,7 +72,7 @@ export default function OurApproach() {
               Our proven methodology ensures the right match between professionals and organizations, focusing on both technical competence and personal character.
             </p>
           </div>
-          
+
           {/* Step 1 */}
           <div className="flex flex-wrap items-center -mx-4 mb-16">
             <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
@@ -97,7 +97,7 @@ export default function OurApproach() {
             <div className="w-full lg:w-1/2 px-4">
               <Image
                 className="block w-full rounded-2xl"
-                src="/fauna-assets/about/about-image2.png"
+                src="/fauna-assets/about/about-image3.png"
                 alt="Client Intake Process"
                 width={500}
                 height={400}
@@ -161,7 +161,7 @@ export default function OurApproach() {
             <div className="w-full lg:w-1/2 px-4">
               <Image
                 className="block w-full rounded-2xl"
-                src="/fauna-assets/about/about-image4.png"
+                src="/fauna-assets/about/about-image3.png"
                 alt="Character Assessment"
                 width={500}
                 height={400}
@@ -174,7 +174,7 @@ export default function OurApproach() {
             <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0 order-2 lg:order-1">
               <Image
                 className="block w-full rounded-2xl"
-                src="/fauna-assets/about/about-image2.png"
+                src="/fauna-assets/about/about-image3.png"
                 alt="Matching Process"
                 width={500}
                 height={400}
@@ -238,7 +238,7 @@ export default function OurApproach() {
             <div className="w-full lg:w-1/2 px-4 mb-12 lg:mb-0 order-2 lg:order-1">
               <Image
                 className="block w-full rounded-2xl"
-                src="/fauna-assets/about/about-image4.png"
+                src="/fauna-assets/about/about-image3.png"
                 alt="Coaching and Evaluation"
                 width={500}
                 height={400}

@@ -103,37 +103,24 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
                 </li>
               </ul>
               <div className="flex items-center justify-end">
-                {isHome ? (
-                  <div className="hidden md:block">
-                    <Link
-                      className="inline-flex group py-2.5 px-4 items-center justify-center text-sm font-medium text-white hover:text-teal-900 border border-white hover:bg-white rounded-full transition duration-200"
-                      href="/contact"
-                    >
-                      <span className="mr-2">Find professionals</span>
-                      <span className="transform group-hover:translate-x-0.5 transition-transform duration-200">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M4.75 10H15.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
-                          <path d="M10 4.75L15.25 10L10 15.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
-                        </svg>
-                      </span>
-                    </Link>
-                  </div>
-                ) : (
-                  <div className="hidden md:block">
-                    <Link
-                      className="inline-flex py-2.5 px-4 mr-3 lg:mr-4 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200"
-                      href="/login"
-                    >
-                      Login
-                    </Link>
-                    <Link
-                      className="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-white border border-teal-900 hover:border-black bg-teal-900 hover:bg-black rounded-full transition duration-200"
-                      href="/contact"
-                    >
-                      Submit assignment
-                    </Link>
-                  </div>
-                )}
+                <div className="hidden md:block">
+                  <Link
+                    className={`inline-flex group py-2.5 px-4 items-center justify-center text-sm font-medium transition duration-200 rounded-full ${
+                      isHome
+                        ? 'text-white hover:text-teal-900 border border-white hover:bg-white'
+                        : 'text-white border border-teal-900 bg-teal-900 hover:bg-teal-800'
+                    }`}
+                    href="/contact"
+                  >
+                    <span className="mr-2">Get In Touch</span>
+                    <span className="transform group-hover:translate-x-0.5 transition-transform duration-200">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.75 10H15.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+                        <path d="M10 4.75L15.25 10L10 15.25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+                      </svg>
+                    </span>
+                  </Link>
+                </div>
                 <button
                   className={`md:hidden px-3 py-2 rounded-lg border transition-colors duration-200 ${
                     isHome 
@@ -229,22 +216,13 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
               </ul>
             </div>
             <div className="pt-6 border-t border-gray-200">
-              <div className="flex flex-col space-y-4">
-                <Link
-                  className="inline-flex py-3 px-4 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-lg transition duration-200"
-                  href="/login"
-                  onClick={() => setMobileNavOpen(false)}
-                >
-                  Login
-                </Link>
-                <Link
-                  className="inline-flex py-3 px-4 items-center justify-center text-sm font-medium text-white border border-teal-900 bg-teal-900 hover:bg-teal-800 rounded-lg transition duration-200"
-                  href="/contact"
-                  onClick={() => setMobileNavOpen(false)}
-                >
-                  Submit Assignment
-                </Link>
-              </div>
+              <Link
+                className="inline-flex py-3 px-4 items-center justify-center text-sm font-medium text-white border border-teal-900 bg-teal-900 hover:bg-teal-800 rounded-lg transition duration-200"
+                href="/contact"
+                onClick={() => setMobileNavOpen(false)}
+              >
+                Get In Touch
+              </Link>
             </div>
           </nav>
         </div>

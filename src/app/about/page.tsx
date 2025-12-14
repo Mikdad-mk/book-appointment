@@ -12,7 +12,7 @@ export default function About() {
       <section className="py-12 lg:py-24 bg-teal-900 overflow-hidden">
         <Image
           className="absolute top-0 left-0 w-full h-full opacity-20"
-          src="/fauna-assets/headers/bg-waves.png"
+          src=""
           alt=""
           width={1920}
           height={1080}
@@ -47,7 +47,7 @@ export default function About() {
             <div className="w-full md:w-1/2 px-4">
               <Image
                 className="block w-full rounded-2xl"
-                src="/fauna-assets/about/about-image2.png"
+                src=""
                 alt="Ihsan Talent & Staffing Team"
                 width={500}
                 height={400}
@@ -213,7 +213,7 @@ export default function About() {
             <div className="w-full lg:w-1/2 px-4">
               <Image
                 className="block w-full rounded-2xl"
-                src="/fauna-assets/about/about-image4.png"
+                src=""
                 alt="Our Office in The Hague"
                 width={500}
                 height={400}
