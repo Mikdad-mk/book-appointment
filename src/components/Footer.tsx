@@ -13,9 +13,9 @@ export default function Footer() {
       />
       <div className="container px-4 mx-auto relative">
         <div className="flex flex-wrap mb-16 -mx-4">
-          <div className="w-full lg:w-2/12 xl:w-2/12 px-4 mb-16 lg:mb-0">
+          <div className="w-full lg:w-2/12 xl:w-2/12 px-4 mb-16 lg:mb-0 flex justify-center lg:justify-start">
             <Link className="inline-block mb-4" href="/">
-              <Image src="/images/ihsan-logo.svg" alt="Ihsan Talent & Staffing" width={180} height={32} />
+              <Image src="/images/logo-256.png" alt="Ihsan Talent & Staffing" width={96} height={96} className="w-24 h-24" />
             </Link>
           </div>
           <div className="w-full md:w-7/12 lg:w-6/12 px-4 mb-16 lg:mb-0">

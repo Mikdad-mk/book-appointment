@@ -1,10 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import { AnimatedGridPattern } from '@/components/ui/animated-grid-pattern'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -30,23 +30,43 @@ export default function Contact() {
 
   return (
     <div>
-      <Navigation />
+      {/* Top Banner */}
+      <div>
+        <p className="mb-0 py-3 px-4 bg-lime-500 text-center text-sm sm:text-base">
+          Part of Ihsan Europe Group B.V. | International staffing solutions
+        </p>
+      </div>
+
+      <Navigation variant="home" />
 
       {/* Hero Section */}
-      <section className="py-12 lg:py-24 bg-teal-900 overflow-hidden">
-        <Image
-          className="absolute top-0 left-0 w-full h-full opacity-20"
-          src="/fauna-assets/headers/bg-waves.png"
-          alt=""
-          width={1920}
-          height={1080}
+      <section className="relative bg-teal-900 py-16 sm:py-20 lg:py-32 overflow-hidden">
+        {/* Animated Grid Pattern Background */}
+        <AnimatedGridPattern
+          numSquares={30}
+          maxOpacity={0.15}
+          duration={3}
+          repeatDelay={1}
+          className="fill-lime-400/20 stroke-lime-400/20 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)] inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
         />
-        <div className="container mx-auto px-4 relative">
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-heading text-5xl xs:text-6xl xl:text-7xl tracking-tight text-white mb-8">
+            <div className="mb-6 sm:mb-8">
+              <span className="inline-flex items-center px-3 sm:px-4 py-2 bg-lime-500/20 text-lime-300 rounded-full text-xs sm:text-sm font-medium">
+                <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                Get In Touch
+              </span>
+            </div>
+            
+            <h1 className="font-heading text-3xl xs:text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white mb-6 sm:mb-8 leading-tight">
               Contact Us
             </h1>
-            <p className="max-w-2xl mx-auto text-xl text-white opacity-80 mb-10">
+            
+            <p className="max-w-2xl mx-auto text-lg sm:text-xl text-white/90 mb-8 sm:mb-12 leading-relaxed px-4">
               Ready to find exceptional professionals or advance your career? Let&apos;s start the conversation.
             </p>
           </div>

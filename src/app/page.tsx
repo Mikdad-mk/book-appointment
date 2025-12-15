@@ -394,17 +394,17 @@ function FAQSection() {
               </span>
             </button>
           ))}
-          <div className="flex flex-col sm:flex-row py-6 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-10 bg-orange-50 rounded-xl sm:rounded-2xl mt-6 sm:mt-8">
-            <div className="mb-4 sm:mb-0 sm:mr-6 flex justify-center sm:justify-start">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start py-6 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-10 bg-orange-50 rounded-xl sm:rounded-2xl mt-6 sm:mt-8">
+            <div className="mb-4 sm:mb-0 sm:mr-6 flex-shrink-0">
               <Image
-                src="/images/logo.svg"
+                src="/images/logo-256.png"
                 alt="Ihsan Talent Logo"
-                width={48}
-                height={48}
-                className="w-10 h-10 sm:w-12 sm:h-12"
+                width={96}
+                height={96}
+                className="w-24 h-24"
               />
             </div>
-            <div className="text-center sm:text-left">
+            <div className="text-center sm:text-left flex-1">
               <h5 className="text-lg sm:text-xl font-medium mb-3 sm:mb-4">Need more information?</h5>
               <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                 <span>Contact our team for personalized assistance with your staffing needs.</span>{' '}

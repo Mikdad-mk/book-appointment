@@ -6,7 +6,14 @@ import Footer from '@/components/Footer'
 export default function About() {
   return (
     <div>
-      <Navigation />
+      {/* Top Banner */}
+      <div>
+        <p className="mb-0 py-3 px-4 bg-lime-500 text-center text-sm sm:text-base">
+          Part of Ihsan Europe Group B.V. | International staffing solutions
+        </p>
+      </div>
+
+      <Navigation variant="home" />
       
       {/* Hero Section */}
       <section className="py-12 lg:py-24 bg-teal-900 overflow-hidden">

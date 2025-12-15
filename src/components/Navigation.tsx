@@ -16,26 +16,25 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
   return (
     <>
       <section className={`${isHome ? 'relative bg-teal-900' : 'overflow-hidden'}`}>
-        <nav className={`${isHome ? 'py-6' : 'py-4 border-b border-gray-200 bg-white shadow-sm'}`}>
+        <nav className={`${isHome ? 'py-3' : 'py-3 border-b border-gray-200 bg-white shadow-sm'}`}>
           <div className="container mx-auto px-4">
             <div className="relative flex items-center justify-between">
-              <Link className="inline-block" href="/">
+              <Link className="inline-block relative z-10" href="/">
                 <Image
-                  className="h-8"
-                  src={isHome ? "/images/ihsan-logo-white.svg" : "/images/ihsan-logo.svg"}
+                  className="h-20 w-20 -my-2"
+                  src="/images/logo-256.png"
                   alt="Ihsan Talent & Staffing"
-                  width={180}
-                  height={32}
+                  width={80}
+                  height={80}
                 />
               </Link>
               <ul className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex">
                 <li className="mr-4 lg:mr-6">
                   <Link
-                    className={`inline-block font-medium ${
-                      isHome
+                    className={`inline-block font-medium ${isHome
                         ? 'text-white hover:text-lime-500'
                         : 'text-teal-900 hover:text-teal-700'
-                    }`}
+                      }`}
                     href="/about"
                   >
                     About Us
@@ -43,11 +42,10 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
                 </li>
                 <li className="mr-4 lg:mr-6">
                   <Link
-                    className={`inline-block font-medium ${
-                      isHome
+                    className={`inline-block font-medium ${isHome
                         ? 'text-white hover:text-lime-500'
                         : 'text-teal-900 hover:text-teal-700'
-                    }`}
+                      }`}
                     href="/for-clients"
                   >
                     Clients
@@ -55,11 +53,10 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
                 </li>
                 <li className="mr-4 lg:mr-6">
                   <Link
-                    className={`inline-block font-medium ${
-                      isHome
+                    className={`inline-block font-medium ${isHome
                         ? 'text-white hover:text-lime-500'
                         : 'text-teal-900 hover:text-teal-700'
-                    }`}
+                      }`}
                     href="/for-professionals"
                   >
                     Professionals
@@ -67,11 +64,10 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
                 </li>
                 <li className="mr-4 lg:mr-6">
                   <Link
-                    className={`inline-block font-medium ${
-                      isHome
+                    className={`inline-block font-medium ${isHome
                         ? 'text-white hover:text-lime-500'
                         : 'text-teal-900 hover:text-teal-700'
-                    }`}
+                      }`}
                     href="/expertise"
                   >
                     Expertise
@@ -79,11 +75,10 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
                 </li>
                 <li className="mr-4 lg:mr-6">
                   <Link
-                    className={`inline-block font-medium ${
-                      isHome
+                    className={`inline-block font-medium ${isHome
                         ? 'text-white hover:text-lime-500'
                         : 'text-teal-900 hover:text-teal-700'
-                    }`}
+                      }`}
                     href="/vacancies"
                   >
                     Vacancies
@@ -91,11 +86,10 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
                 </li>
                 <li>
                   <Link
-                    className={`inline-block font-medium ${
-                      isHome
+                    className={`inline-block font-medium ${isHome
                         ? 'text-white hover:text-lime-500'
                         : 'text-teal-900 hover:text-teal-700'
-                    }`}
+                      }`}
                     href="/contact"
                   >
                     Contact
@@ -105,11 +99,10 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
               <div className="flex items-center justify-end">
                 <div className="hidden md:block">
                   <Link
-                    className={`inline-flex group py-2.5 px-4 items-center justify-center text-sm font-medium transition duration-200 rounded-full ${
-                      isHome
+                    className={`inline-flex group py-2.5 px-4 items-center justify-center text-sm font-medium transition duration-200 rounded-full ${isHome
                         ? 'text-white hover:text-teal-900 border border-white hover:bg-white'
                         : 'text-white border border-teal-900 bg-teal-900 hover:bg-teal-800'
-                    }`}
+                      }`}
                     href="/contact"
                   >
                     <span className="mr-2">Get In Touch</span>
@@ -122,16 +115,15 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
                   </Link>
                 </div>
                 <button
-                  className={`md:hidden px-3 py-2 rounded-lg border transition-colors duration-200 ${
-                    isHome 
-                      ? 'text-white border-white hover:bg-white hover:text-teal-900' 
+                  className={`md:hidden px-3 py-2 rounded-lg border transition-colors duration-200 ${isHome
+                      ? 'text-white border-white hover:bg-white hover:text-teal-900'
                       : 'text-teal-900 border-teal-900 hover:bg-teal-900 hover:text-white'
-                  }`}
+                    }`}
                   onClick={() => setMobileNavOpen(!mobileNavOpen)}
                 >
                   <span className="sr-only">Open menu</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </button>
               </div>
@@ -145,23 +137,23 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
           <nav className="relative flex flex-col py-6 px-6 w-full h-full bg-white shadow-2xl overflow-y-auto">
             <div className="flex items-center justify-between pb-6 border-b border-gray-200">
               <Link className="inline-block" href="/" onClick={() => setMobileNavOpen(false)}>
-                <Image className="h-8" src="/images/ihsan-logo.svg" alt="Ihsan Talent & Staffing" width={180} height={32} />
+                <Image className="h-14 w-14" src="/images/logo-256.png" alt="Ihsan Talent & Staffing" width={56} height={56} />
               </Link>
-              <button 
-                className="p-2 rounded-lg text-gray-500 hover:text-gray-700 hover:bg-gray-100 transition-colors duration-200" 
+              <button
+                className="p-2 rounded-lg text-gray-500 hover:text-gray-700 hover:bg-gray-100 transition-colors duration-200"
                 onClick={() => setMobileNavOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
             </div>
             <div className="py-6 flex-1">
               <ul className="space-y-1">
                 <li>
-                  <Link 
-                    className="block px-4 py-3 text-gray-700 hover:text-teal-900 hover:bg-gray-50 rounded-lg font-medium transition-colors duration-200" 
+                  <Link
+                    className="block px-4 py-3 text-gray-700 hover:text-teal-900 hover:bg-gray-50 rounded-lg font-medium transition-colors duration-200"
                     href="/about"
                     onClick={() => setMobileNavOpen(false)}
                   >
@@ -169,8 +161,8 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
                   </Link>
                 </li>
                 <li>
-                  <Link 
-                    className="block px-4 py-3 text-gray-700 hover:text-teal-900 hover:bg-gray-50 rounded-lg font-medium transition-colors duration-200" 
+                  <Link
+                    className="block px-4 py-3 text-gray-700 hover:text-teal-900 hover:bg-gray-50 rounded-lg font-medium transition-colors duration-200"
                     href="/for-clients"
                     onClick={() => setMobileNavOpen(false)}
                   >
@@ -178,8 +170,8 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
                   </Link>
                 </li>
                 <li>
-                  <Link 
-                    className="block px-4 py-3 text-gray-700 hover:text-teal-900 hover:bg-gray-50 rounded-lg font-medium transition-colors duration-200" 
+                  <Link
+                    className="block px-4 py-3 text-gray-700 hover:text-teal-900 hover:bg-gray-50 rounded-lg font-medium transition-colors duration-200"
                     href="/for-professionals"
                     onClick={() => setMobileNavOpen(false)}
                   >
@@ -187,8 +179,8 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
                   </Link>
                 </li>
                 <li>
-                  <Link 
-                    className="block px-4 py-3 text-gray-700 hover:text-teal-900 hover:bg-gray-50 rounded-lg font-medium transition-colors duration-200" 
+                  <Link
+                    className="block px-4 py-3 text-gray-700 hover:text-teal-900 hover:bg-gray-50 rounded-lg font-medium transition-colors duration-200"
                     href="/expertise"
                     onClick={() => setMobileNavOpen(false)}
                   >
@@ -196,8 +188,8 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
                   </Link>
                 </li>
                 <li>
-                  <Link 
-                    className="block px-4 py-3 text-gray-700 hover:text-teal-900 hover:bg-gray-50 rounded-lg font-medium transition-colors duration-200" 
+                  <Link
+                    className="block px-4 py-3 text-gray-700 hover:text-teal-900 hover:bg-gray-50 rounded-lg font-medium transition-colors duration-200"
                     href="/vacancies"
                     onClick={() => setMobileNavOpen(false)}
                   >
@@ -205,8 +197,8 @@ export default function Navigation({ variant = 'default' }: NavigationProps) {
                   </Link>
                 </li>
                 <li>
-                  <Link 
-                    className="block px-4 py-3 text-gray-700 hover:text-teal-900 hover:bg-gray-50 rounded-lg font-medium transition-colors duration-200" 
+                  <Link
+                    className="block px-4 py-3 text-gray-700 hover:text-teal-900 hover:bg-gray-50 rounded-lg font-medium transition-colors duration-200"
                     href="/contact"
                     onClick={() => setMobileNavOpen(false)}
                   >

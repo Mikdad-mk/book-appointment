@@ -7,7 +7,14 @@ import { AnimatedGridPattern } from '@/components/ui/animated-grid-pattern'
 export default function Expertise() {
   return (
     <div>
-      <Navigation />
+      {/* Top Banner */}
+      <div>
+        <p className="mb-0 py-3 px-4 bg-lime-500 text-center text-sm sm:text-base">
+          Part of Ihsan Europe Group B.V. | International staffing solutions
+        </p>
+      </div>
+
+      <Navigation variant="home" />
       
       {/* Hero Section */}
       <section className="relative bg-teal-900 py-16 sm:py-20 lg:py-32 overflow-hidden">

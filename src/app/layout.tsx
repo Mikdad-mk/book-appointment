@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Ihsan Talent & Staffing B.V. - Professionals with expertise and character',
   description: 'We deliver highly qualified professionals for public, corporate, and societal organizations. Finance & Control, ESG & Sustainability, Legal & Governance, and Social Care professionals.',
   icons: {
-    icon: '/favicon.png',
+    icon: '/images/logo-256.png',
   },
 }
 
